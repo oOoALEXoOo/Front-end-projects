@@ -1,2 +1,1 @@
-JavaScript Core
-Frontend Developer courses.
+My projects made during Front-end developer course.
