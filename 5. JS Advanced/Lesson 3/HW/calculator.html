@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculator</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+  <div class="container">
+    <div class="input-group">
+      <input id="display" type="text" class="form-control">
+      <div class="input-group-append">
+        <button id="lastAnswerKey" class="btn btn-outline-secondary" type="button">Previous</button>
+      </div>
+    </div>
+
+    <div class="row first justify-content-between">
+      <button type="button" class="btn btn-dark">1</button>
+      <button type="button" class="btn btn-dark">2</button>
+      <button type="button" class="btn btn-dark">3</button>
+      <button type="button" class="btn btn-primary">+</button>
+      <button type="button" class="btn btn-primary">-</button>
+    </div>
+
+    <div class="row second justify-content-between">
+      <button type="button" class="btn btn-dark">4</button>
+      <button type="button" class="btn btn-dark">5</button>
+      <button type="button" class="btn btn-dark">6</button>
+      <button type="button" class="btn btn-primary">*</button>
+      <button type="button" class="btn btn-primary">/</button>
+    </div>
+
+    <div class="row third justify-content-between">
+      <button type="button" class="btn btn-dark">7</button>
+      <button type="button" class="btn btn-dark">8</button>
+      <button type="button" class="btn btn-dark">9</button>
+      <button type="button" class="btn btn-primary">(</button>
+      <button type="button" class="btn btn-primary">)</button>
+    </div>
+
+    <div class="row fourth justify-content-between">
+      <button type="button" class="btn btn-dark">.</button>
+      <button type="button" class="btn btn-dark">0</button>
+      <button type="button" class="btn btn-dark">00</button>
+      <button type="button" class="btn btn-primary">^</button>
+      <button type="button" class="btn btn-primary">√</button>
+    </div>
+
+    <div class="row fifth justify-content-between">
+      <button type="button" class="btn btn-primary">cos</button>
+      <button type="button" class="btn btn-primary">sin</button>
+      <button type="button" class="btn btn-warning" id="clearKey">C</button>
+      <button type="button" class="btn btn-primary" id="equalsKey">=</button>
+    </div>
+  </div>
+</body>
+<script src="calculator.js"></script>
+</html>

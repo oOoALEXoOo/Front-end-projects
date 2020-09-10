@@ -1,0 +1,176 @@
+@media screen and (min-width: 768px) {  
+    header.top-level {
+        min-height: 800px
+    }
+    
+    header.top-level h1 {
+        text-align: left;
+        margin-left: 20px
+    }
+    
+    header.top-level .menu-hr {
+        width: 630px;
+        height: auto;
+        background: none;
+        display: flex;
+        opacity: 1;
+        flex-direction: row;
+        top: 146px;
+        left: 20px;
+        transform: translateX(0);
+        z-index: auto;
+        justify-content: space-between;
+        margin-bottom: 14px
+    }
+    
+    header.top-level .menu-hr li:nth-child(n), header.top-level .menu-hr li:nth-child(n) a {
+        box-shadow: none;
+        background: none;
+        padding: 0;
+        margin: 0;
+        width: auto
+    }
+    
+    header.top-level .menu-hr li a {
+        text-shadow: 1px 2px 2px rgba(0,0,0,0.4)
+    }
+    
+    header.top-level .menu-hr li:first-child a {
+        padding: 0 4px 3px 4px;
+        box-shadow: 0 2px 0 0 #edbfff
+    }
+    
+    header.top-level div.bg {
+        min-height: 400px;
+        margin-top: 134px;
+        margin-bottom: 22px;
+    }
+    
+    header.top-level div.bg img.iPhone {
+        top: -25px;
+        right: 50px;
+        width: 274px;
+        height: 434px
+    }
+    
+    header.top-level div.bg div h2 {
+        font-size: 48px;
+        margin-bottom: 10px
+    }
+    
+    header.top-level div.bg div h3 {
+        font-size: 24px;
+        margin-bottom: 10px
+    }
+    
+    header.top-level div.bg div p {
+        display: block;
+        max-width: 280px;
+        max-height: 104px;
+        font-family: 'Open Sans', sans-serif;
+        line-height: 24px;
+        overflow-y: hidden
+    }
+    
+    header.top-level div.bg div p span {
+        display: block;
+        margin-bottom: 8px
+    }
+    
+    header.top-level div.radio-hr {
+        margin-top: 15px;
+        float: right;
+        margin-right: 144px
+    }
+    
+    header.bottom-level {
+        display: flex;
+        min-height: 340px;
+        justify-content: space-between
+    }
+    
+    header.bottom-level article p {
+        max-width: 151px;
+        min-height: 140px
+    }
+    
+    main {
+        min-height: auto
+    }
+    
+    main div.article-wrapped {
+        float: left;
+        margin-bottom: 73px
+    }
+    
+    main div.article-wrapped article.main {
+        max-width: 313px;
+        min-height: 272px;
+        margin-bottom: 24px
+    }
+    
+    main div.article-wrapped div.radio-main {
+        margin-bottom: 0
+    }
+    
+    main article.main h1, main article.main h1 + h1 {
+        display: block;
+        font-size: 24px;
+    }
+    
+    main article.main p {
+        max-height: 150px;
+        width: 256px;
+        overflow-y: hidden
+    }
+    
+    main article.secondary {
+        float: right;
+        margin-right: 40px;
+        margin-top: 33px
+    }
+    
+    main .horline._2, main .horline._3 {
+        clear: both
+    }
+    
+    main article.brends ._480 {
+        display: none
+    }
+    
+    main article.brends ._768 {
+        display: block;
+        padding: 26px 0
+    }
+    
+    main.news {
+        min-height: 397px
+    }
+    
+    main.news article.news {
+        flex-direction: row;
+        justify-content: space-between
+    }
+    
+    main.news article.news article {
+        margin: 0
+    }
+    
+    main.news article.news article p {
+        margin: 0;
+        max-width: 215px;
+        max-height: 167px;
+        overflow-y: hidden;
+        word-break: normal
+    }
+    
+    footer .menu-fr {
+        max-width: 524px;
+        padding-top: 47px;
+        justify-content: space-between
+    }
+    
+    footer p {
+        float: right
+    }
+}

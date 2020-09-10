@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0
+}
+.container{
+    display: flex;  
+    background: green;
+    list-style: none;
+    justify-content: flex-end;
+    flex-wrap: wrap
+}
+a{
+    color:white;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    margin: 0 15px
+}
+a:hover{
+    background: lightgreen
+}
+@media screen and (max-width:768px){
+    .container{
+        justify-content: space-around
+    }
+    a{
+        margin: 0
+    }
+}
+@media screen and (max-width:480px){
+    .container{
+        flex-direction: column;
+        text-align: center
+    }
+    a{
+        border-bottom: 1px solid black
+    }
+}

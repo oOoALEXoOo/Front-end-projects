@@ -1,0 +1,65 @@
+@font-face {
+    font-family: "Lemonada";
+    src: url(../fonts/Lemonada-Regular.ttf);
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    
+    background-color: bisque;
+    background-image: url(../images/butterfly.gif);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    background-size: 500px
+    
+/*
+    background: bisque url(../images/butterfly.gif) no-repeat fixed center center;
+    background-size: 500px
+    background-image: url(../images/image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover
+*/
+}
+
+
+/*
+ol {
+    color: red
+}
+*/
+
+p {
+    color: purple;
+    text-align: justify;
+    line-height: 25px;
+    text-indent: 50px;
+    background-color: aqua
+}
+
+path {
+    fill: red;
+}
+
+h1 {
+    font-family: "Lemonada";
+    color: red;
+    font-size: 200%;
+    text-align: center;
+    letter-spacing: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+#extra {
+    color: fuchsia
+}
+.changed {
+    color: red
+}
+span {
+    color: green !important
+}
+span {
+    color: red
+}

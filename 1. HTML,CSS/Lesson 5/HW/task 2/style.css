@@ -1,0 +1,43 @@
+body {
+    background-image: url(images/bg.jpg);
+    background-size: cover
+}
+
+h1 {
+    font-family: 'Tahoma', sans-serif;
+    font-style: italic;
+    color: #FFF;
+    text-decoration: underline solid
+}
+
+div {
+    width: 49%;
+    height: 50%;
+    background: #EED0F2;
+    position: absolute;
+    top: 12%;
+    right: 0.5%;
+    border: 4px double black;
+}
+
+div h2 {
+    color: blue;
+    text-align: center;
+    margin: 30px 0
+}
+
+p+h2 {
+    margin: 20px 0
+}
+
+div #first {
+    color: red;
+    text-align: justify;
+    margin: 0 10px
+}
+
+div #second {
+    font-family: 'Arial', sans-serif;
+    font-style: italic;
+    margin: 0 32px 0 10px
+}

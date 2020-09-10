@@ -1,0 +1,89 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: #ADD9E6
+}
+
+h2 {
+    clear: both;
+    text-align: center;
+    padding-top: 15px
+}
+
+h3 {
+    color: #0100FD
+}
+
+a {
+    color: blue
+}
+
+a:visited {
+    color: purple
+}
+
+ul.horizontalMenu {
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+ul.horizontalMenu li {
+    float: left;
+    background: #FFFF01;
+    border: solid 1px /*0.075%*/ black;
+    border-right: 0
+}
+
+ul.horizontalMenu li:first-child {
+    width: 22%
+}
+
+ul.horizontalMenu li:nth-child(2) {
+    width: 15%
+}
+
+ul.horizontalMenu li:nth-child(3) {
+    width: 20%
+}
+
+ul.horizontalMenu li:nth-child(4) {
+    width: 16%
+}
+
+ul.horizontalMenu li:last-child {
+    width: 26.55%;
+    border-right: solid 1px black
+}
+
+ul.horizontalMenu li a {
+    display: block;
+    padding: 10px 30px;
+    text-align: center;
+}
+
+.imgOfCity {
+    float: left;
+    width: 38%
+}
+
+ul.verticalMenu {
+    display: inline-block;
+    margin: 0 40px;
+    padding: 0;
+}
+
+ul.verticalMenu li a {
+    font-style: italic
+}
+
+ul.verticalMenu li a:active, #buttonUp:active {
+    color: orange
+}
+
+.textDescribingCity {
+    clear: both
+}
+
+.textDescribingCity .firstSection {
+    padding-top: 18.720px
+}

@@ -1,0 +1,66 @@
+7+tables
+pets_for_sale
+
+type (
+	name
+)
+
+breed (
+	
+)
+
+cat_breed (
+	name
+	description
+)
+
+dog_breed (
+	name
+	description
+)
+
+color (
+	name
+)
+
+gender (
+	name
+)
+
+location (
+	town_id
+)
+
+pet (
+	name,
+	date_of_birth,
+	price,
+	type_id,
+	breed_id,
+	color_id,
+	gender_id,
+	location_id
+)
+
+country (
+	name
+)
+
+town (
+	name,
+	country_id
+)
+
+breeder (
+	first_name,
+	last_name,
+	reviews_rating,
+	reviews,
+	email,
+	date_of_birth,
+	phone_number,
+	town_id,
+	gender_id
+)
+
+

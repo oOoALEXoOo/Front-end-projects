@@ -1,0 +1,73 @@
+*{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.page {
+    width: 95%; /*великі ПК*/
+    margin: 0 auto;
+    color: #fff;
+    font-size: 1.5em;
+    max-width: 1600px
+}
+
+.header {
+    background: #B65727;
+    min-height: 80px;
+}
+
+.sidebar {
+    background: #AF20B6;
+    min-height: 200px;
+    width: 20%;
+}
+
+.sidebar-left {
+    float: left;
+    margin-right:5%
+}
+
+.sidebar-right {
+    float: right;
+}
+
+.main {
+    background: #57B604;
+    min-height: 500px;
+    width: 50%;
+    float: left;
+}
+
+.footer {
+    background: #4EB7D7;
+    min-height: 80px;
+    clear: both;
+}
+
+
+@media screen and (max-width: 1024px) { /*планшети альбом, нетбуки*/
+    .sidebar-right {
+        float: none;
+        display: block;
+        clear: both;
+        width: 100%;
+    }
+    
+    .sidebar-left {
+        width: 30%;
+    }
+    
+    .main {
+        float: right;
+        width: 65%;
+        height: 400px
+    }
+}
+
+@media screen and (max-width: 600px) { /*невеликі планшети*/
+    .main, .sidebar {
+        float: none;
+        width: 100%;
+    }
+}
+

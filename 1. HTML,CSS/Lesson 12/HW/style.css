@@ -1,0 +1,495 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@font-face {  
+    font-family: 'LeagueGothic';
+    src: url("fonts/LeagueGothicCyrillic.ttf") format("truetype");
+/*
+    font-family: "MyriadProBold";
+	src: url("fonts/MyriadProBold/MyriadProBold.eot");
+	src: url("fonts/MyriadProBold/MyriadProBold.eot?#iefix")format("embedded-opentype"),
+	url("fonts/MyriadProBold/MyriadProBold.woff") format("woff"),
+	url("fonts/MyriadProBold/MyriadProBold.ttf") format("truetype");
+	font-family: "MyriadProRegular";
+	src: url("fonts/MyriadProRegular/MyriadProRegular.eot");
+	src: url("fonts/MyriadProRegular/MyriadProRegular.eot?#iefix")format("embedded-opentype"),
+	url("fonts/MyriadProRegular/MyriadProRegular.woff") format("woff"),
+	url("fonts/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
+*/
+}
+
+
+body {
+    font-family: 'LeagueGothic'
+}
+
+header {
+    color: #fff
+}
+
+header.top-level {
+    min-height: 517px;
+    background: url(images/min/header-bg.jpg) no-repeat, #f0d7dd;
+    background-position: top center;
+    text-align: center
+}
+
+header.top-level h1 {
+    font-size: 48px;
+    text-transform: uppercase;
+    padding-top: 70px;
+    margin-bottom: 40px;
+    text-shadow: 0 2px 2px rgba(0,0,0,0.3) 
+}
+
+header.top-level h1>.er {
+    text-shadow: none;
+    background: -webkit-linear-gradient(#745083, #322539);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+header.top-level div.chapter {
+    margin: 0 auto;
+    width: 50px
+}
+
+header.top-level div.chapter h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    text-shadow: 0 0 10px rgba(255,255,255,0.6)
+}
+
+header.top-level div.chapter .horline {
+    height: 2px;
+    background: #edbfff
+}
+
+header.top-level div.bg {
+    width: 100%;
+    min-height: 54px;
+    position: relative;
+    margin-top: 124px;
+    margin-bottom: 70px
+}
+
+header.top-level div.bg .left-arrow {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%)
+}
+
+header.top-level div.bg .right-arrow {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%)
+}
+
+header.top-level div.bg div {
+    min-width: 210px;
+    text-align: left;
+    margin-left: 65px
+}
+
+header.top-level div.bg div h2 {
+    font-size: 36px;
+    text-shadow: 0 2px 2px rgba(0,0,0,0.3);
+    margin-bottom: 2px
+}
+
+header.top-level div.bg div h3 {
+    font-size: 18px;
+    color: #edbfff;
+    text-transform: uppercase;
+    text-shadow: 0 2px 2px rgba(0,0,0,0.3)
+}
+
+header.top-level label {
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    position: relative
+}
+
+header.top-level input[type="radio"] {
+    opacity: 0
+}
+
+header.top-level input[type="radio"] + div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(images/min/header-radio-sprite.png);
+    opacity: 0.3;
+    cursor: pointer
+}
+
+header.top-level input[type="radio"]:checked + div + div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(images/min/header-radio-sprite.png);
+    background-position: bottom center
+}
+
+header.bottom-level {
+    position: relative;
+    min-height: 600px;
+    background: linear-gradient(#745083, #322539);
+    padding: 75px 27px 68px 33px;
+    box-sizing: border-box
+}
+
+header.bottom-level article {
+    margin: 0 auto;
+    clear: both
+}
+
+header.bottom-level article img {
+    float: left
+}
+
+header.bottom-level article div {
+    margin-left: 50px;
+}
+
+header.bottom-level article h1 {
+    font-size: 24px;
+    text-shadow: 1px 1px #0f1518;
+    margin-bottom: 2px
+}
+
+header.bottom-level article p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    text-shadow: 1px 1px #0f1518;
+    margin-bottom: 12px;
+    max-height: 72px;
+    overflow-y: hidden;
+}
+
+header.bottom-level article input {
+    font-family: 'LeagueGothic';
+    float: right;
+    margin-bottom: 30px;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer
+}
+
+header.bottom-level article:nth-child(2) input {
+    margin-bottom: 45px
+}
+
+header.bottom-level article input:hover {
+    text-shadow: 0 0 5px rgba(255,255,255,0.8)
+}
+
+header.bottom-level .horline {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 1px
+}
+
+header.bottom-level .horline._1 {
+    background: #1d2f37;
+    bottom: 1px;
+}
+
+header.bottom-level .horline._2 {
+    background: #0d151b;
+    bottom: 0
+}
+
+main {
+    position: relative;
+    min-height: 1210px;
+    background: #f9f9f9;
+    padding: 70px 20px 0 20px;
+    box-sizing: border-box
+}
+
+main .horline {
+    width: 100%;
+    height: 1px
+}
+
+main .horline._1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #fff;
+    box-shadow: 0 1px 8px 3px rgba(0,0,0,0.5)
+}
+
+main article.main {
+    position: relative;
+    background: #fff;
+    min-width: 256px;
+    min-height: 272px;
+    margin-left: 24px;
+    padding: 25px 35px;
+    box-sizing: border-box
+}
+
+main article.main img {
+    position: absolute;
+    top: 18px;
+    left: -24px
+}
+
+main article.main h1 {
+    font-size: 24px;
+    color: #454545;
+    text-shadow: 1px 1px #fff;
+    text-transform: uppercase
+}
+
+main article.main h1 + h1 {
+    color: #edbfff;
+    margin-bottom: 13px
+} 
+
+main article.main p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #454545;
+    line-height: 24px;
+    hyphens: auto;
+    max-height: 168px;
+    overflow-y: hidden
+}
+
+main div.radio-main {
+    margin: 24px 0 51px 121px
+}
+
+main div.radio-main label {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    position: relative
+}
+
+main div.radio-main input[type="radio"] {
+    opacity: 0
+}
+
+main div.radio-main input[type="radio"] + div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(images/min/main-radio-sprite.png);
+    cursor: pointer
+}
+
+main div.radio-main input[type="radio"]:checked + div + div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(images/min/main-radio-sprite.png);
+    background-position: bottom center
+}
+
+main article.secondary {
+    max-width: 320px;
+    margin: 0 auto;
+    min-height: 270px
+}
+
+main article.secondary > h1 {
+    font-size: 30px;
+    color: #454545;
+    text-shadow: 1px 1px #fff;
+    text-transform: uppercase;
+    margin-bottom: 14px
+}
+
+main article.secondary article {
+    position: relative;
+    min-height: 49px;
+    margin-bottom: 14px
+}
+
+main article.secondary article img {
+    position: absolute;
+    top: 0;
+    left: 0    
+}
+
+main article.secondary article div {
+    margin-left: 62px;
+    font-family: 'Open Sans', sans-serif;
+    color: #454545;
+    line-height: 24px
+}
+
+main article.secondary article div h1 {
+    font-weight: bold;
+    display: inline-block;
+    max-width: 150px;
+    overflow-x: hidden;
+    white-space: nowrap
+}
+
+main article.secondary article div h2 {
+    max-height: 24px;
+    max-width: 218px;
+    overflow-x: hidden;
+    overflow-y: hidden
+}
+
+main article.secondary input {
+    font-family: 'LeagueGothic';
+    float: right;
+    margin-top: 9px;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #454545;
+    cursor: pointer
+}
+
+main .horline._2 {
+    margin-top: 90px;
+    background: #e6e6e6;
+}
+
+main .horline._3 {
+    background: #fefefe
+}
+
+main article.brends {
+    text-align: center
+}
+
+main article.brends ._320 {
+    max-width: 320px;
+    padding-top: 52px;
+    padding-bottom: 70px
+}
+
+main article.brends .brends-1 {
+    margin-bottom: 61px
+}
+
+main article.brends .brends-2 {
+    margin-bottom: 43px
+}
+
+footer {
+    min-height: 200px;
+    padding: 0 20px;
+    background: url(images/min/footer-bg.jpg) no-repeat, #ececec;
+    background-position: center;
+    text-align: center
+}
+
+footer p {
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 42px;
+    font-size: 12px;
+    color: #fff;
+    text-shadow: 1px 2px 2px rgba(0,0,0,0.4)
+}
+
+footer p span {
+    font-weight: bold
+}
+
+header.top-level div.bg div h3 .hidden-word {
+    display: none
+}
+
+header.top-level div.bg img.iPhone {
+    display: none
+}
+
+header.top-level .menu-hr {
+    display: none
+}
+
+main article.brends ._480 {
+    display: none
+}
+
+main article.brends ._768 {
+    display: none
+}
+
+main.news {
+    display: none
+}
+
+footer .menu-fr {
+    display: none
+}
+
+header.top-level div.bg div p {
+    display: none
+}
+
+header.bottom-level article:nth-child(2) img+img, header.bottom-level article:nth-child(3) img+img {
+    display: none
+}

@@ -1,0 +1,92 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
+body {
+    background: url(../images/im1.jpg)
+}
+
+input[type="text"], input[type="password"] {
+    background: lightblue;
+    border: 1px solid blue;
+    padding: 10px;
+    width: 300px;
+    outline: none;
+    color: black
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    border: 1px solid red;
+    background: pink
+}
+
+input[type="text"]::-moz-placeholder {
+    color: black
+}
+input[type="text"]::-webkit-input-placeholder {
+    color: black
+}
+input[type="text"]:-ms-input-placeholder {
+    color: black
+}
+input[type="text"]::-ms-input-placeholder {
+    color: black
+}
+input[type="text"]::placeholder {
+    color: black
+}
+
+input[type="checkbox"]:checked+span {
+    background: yellow
+}
+
+input[type="submit"] {
+    background: red;
+    color: white;
+    padding: 10px;
+    width: 200px;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    cursor: pointer
+}
+
+input[type="submit"]:hover {
+    background: orange
+}
+
+input:invalid {
+    background: pink
+}
+
+
+div {
+    width: 600px;
+/*    height: 200px;*/
+    background: rgba(255,0,0,0.5);
+    padding: 20px;
+/*    opacity: 0.5*/
+/*
+    background: -o-radial-gradient(circle, rgba(255,0,0,0.5), orange), url(../images/image.jpg) no-repeat;
+    background: radial-gradient(circle, rgba(255,0,0,0.5), orange), url(../images/image.jpg) no-repeat;
+    background-size: cover;
+    border-radius: 200px 0 50px 10px;
+    -webkit-box-shadow: inset 10px 10px 10px rgba(0,0,0,0.8), 0px 0px 100px rgba(255,255,0,0.9);
+            box-shadow: inset 10px 10px 10px rgba(0,0,0,0.8), 0px 0px 100px rgba(255,255,0,0.9);
+    transform: rotate(30deg);
+    transform: scale(0.5);
+    transform: translate(100%, 100%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%)
+*/
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 52px;
+    color: yellow;
+    text-shadow: 10px 10px 10px rgba(0,0,0,0.8);
+/*    transform: rotate(45deg)*/
+}

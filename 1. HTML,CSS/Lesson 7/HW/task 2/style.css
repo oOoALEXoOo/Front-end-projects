@@ -1,0 +1,274 @@
+@font-face {
+    font-family: 'Akzidenz-Grotesk';
+    src: url(fonts/Akzidenz-Grotesk-Black.ttf)
+}
+
+body {
+    font-family: 'Open Sans', sans-serif
+}
+
+div.bg {
+    width: 800px;
+    height: 569px;
+    background: url(images/bg.jpg) no-repeat;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%)
+}
+
+h1 {
+    font-family: 'Akzidenz-Grotesk';
+    text-transform: uppercase;
+    text-align: center;
+    color: #00264d;
+    font-size: 50px;
+    text-shadow: 2px 2px #fff;
+    margin-bottom: 60px
+}
+
+div.form {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%)
+}
+
+input[value="Login with Facebook"], input[value="Login with Twitter"] {
+    width: 170px;
+    height: 32px;
+    border-radius: 3px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+    text-shadow: -1px -1px 1px rgba(0,0,0,0.5);
+    font-weight: lighter;
+    color: white;
+    border: none;
+    padding-left: 35px;
+    cursor: pointer
+}
+
+input[value="Login with Facebook"] {
+    background: url(images/fb-icon.png) no-repeat, linear-gradient(#0d76be, #0d63ab);
+    background-position: 5% 50%;
+    margin-right: 5px
+}
+
+input[value="Login with Twitter"] {
+    background: url(images/twitter-icon.png) no-repeat, linear-gradient(#57d5ff, #17ade0);
+    background-position: 0.5% 50%;
+    margin-left: 5px
+}
+
+div.login-with .fb-vertLine, div.login-with .tw-vertLine {
+    display: inline;
+    width: 1px;
+    background: rgba(0,0,0,0.3);
+    position: absolute;
+    top: 0;
+    bottom: 0
+}
+
+div.login-with .fb-vertLine {
+    left: 30px
+}
+
+div.login-with .tw-vertLine {
+    right: 140px
+}
+
+div.horLine-word {
+    width: 140px;
+    height: 22px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    margin: 30px 0
+}
+
+div.horLine {
+    height: 2px;
+    background: #DBE0DA;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translate(0,-50%)
+}
+
+div.word-wrapper {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #DBE0DA;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%)
+}
+
+div.word {
+    color: #787A77;
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%)
+}
+
+div.user-password {
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 112px;
+    transform: translate(-50%);
+    margin: 10px 0
+}
+
+div.user, div.password {
+    width: inherit;
+    position: relative
+}
+
+div.user {
+    margin-bottom: 16px
+}
+
+input[type="text"], input[type="password"] {
+    display: block;
+    width: inherit;
+    height: 45px;
+    color: #797979;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    padding-left: 22px;
+    font-size: 18px;
+    box-sizing: border-box
+}
+
+input[type="text"]::placeholder, input[type="password"]::placeholder {
+    color: #797979
+}
+
+input[type="text"] {
+    background: url(images/user-icon.png) no-repeat, #ebebeb;
+    background-position: 96% 50%
+}
+
+input[type="password"] {
+    background: url(images/password-icon.png) no-repeat, #ebebeb;
+    background-position: 95.5% 50%
+}
+
+div.vertLine {
+    width: 1px;
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    right: 45px;
+    top: 0;
+    bottom: 0;
+    margin: 1px 0
+}
+
+input[type="text"]:focus::placeholder, input[type="password"]:focus::placeholder {
+    color: #007eff
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    color: #007eff;
+    border: 1px solid #007eff;
+    box-shadow: 0px 0px 10px 3px white
+}
+
+input[type="text"]:focus {
+    background: url(images/user-icon-active.png) no-repeat, #ebebeb;
+    background-position: 96% 50%
+}
+
+input[type="password"]:focus {
+    background: url(images/password-icon-active.png) no-repeat, #ebebeb;
+    background-position: 95.5% 50%
+}
+
+div.auxiliary-input {
+    width: 100%;
+    position: absolute;
+    top: 238px;
+    margin: 20px 0
+}
+
+div.remember, div.forgot-psw {
+    display: inline
+}
+
+div.remember {
+    position: absolute;
+    left: 0;
+    color: rgba(255,255,255,0.9)
+}
+
+div.remember span {
+    font-size: 13px;
+    position: relative;
+    left: 2px;
+    bottom: 2px
+}
+
+div.forgot-psw {
+    position: absolute;
+    right: 0
+}
+
+div.forgot-psw input {
+    text-align: right;
+    font-size: 13px;
+    background: none;
+    border: none;
+    outline: none;
+    color: rgba(255,255,255,0.9);
+    cursor: pointer
+}
+
+div.login {
+    position: absolute;
+    width: 100%;
+    top: 275px;
+    margin-top: 30px
+}
+
+div.login input {
+    width: inherit;
+    background: #254e77;
+    color: white;
+    height: 45px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 22px;
+    outline: none;
+    box-shadow: 0 0 5px 1px rgba(0,0,0,0.5);
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    border: 2px solid #007eff;
+    cursor: pointer
+}
+
+div.registration {
+    display: inline;
+    position: absolute;
+    top: 350px;
+    left: 50%;
+    margin-left: -91.1565px;
+    margin-top: 12px
+}
+
+div.registration span {
+    color: #797979;
+    font-size: 14px
+}
+
+div.registration input {
+    border: none;
+    background: none;
+    color: #007eff;
+    cursor: pointer;
+    padding: 0;
+    outline: none
+}

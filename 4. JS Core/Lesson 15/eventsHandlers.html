@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Events Handlers</title>
+    <style>
+        .custom-margin {
+            margin-top: 15px;
+        }
+        .error {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <input type="button" value="Press me please" onclick="showData('hi folk')">
+    <br>
+
+    <input class="custom-margin" type="button" value="countBirds()" onclick="countBirds()">
+    <br>
+
+    <input id="eventFromJS" class="custom-margin" type="button" value="eventFromJS">
+    <br>
+
+    <label for="area"></label><textarea class="custom-margin" id="area" cols="30" rows="10"></textarea>
+    <br>
+
+    <input id="focusButton" class="custom-margin" type="button" value="focusButton">
+    <input id="focusText" type="text">
+    <br>
+
+    <label for="formValidationAge">Age: </label><input id="formValidationAge" class="custom-margin" type="text">
+    <br>
+    <label for="formValidationAge">Name: </label><input id="formValidationName" class="custom-margin" type="text">
+
+<script src="eventsHandlers.js"></script>
+</body>
+</html>

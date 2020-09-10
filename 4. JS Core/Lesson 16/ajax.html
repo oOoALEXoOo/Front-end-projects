@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ajax -> Node</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>Ajax get method example</h1>
+
+    <form>
+        <label>Name:</label> <br>
+        <input id="userNameGet" type="text"> <br>
+
+        <label>Age:</label> <br>
+        <input id="userAgeGet" type="text"> <br> <br>
+
+        <input type="button" value="send by Get method" onclick="sendDataByGetMethod()">
+    </form>
+    <br>
+
+    <h1>Ajax post method example</h1>
+
+    <form>
+        <label>Name:</label> <br>
+        <input id="userNamePost" type="text"> <br>
+
+        <label>Age:</label> <br>
+        <input id="userAgePost" type="text"> <br> <br>
+
+        <input type="button" value="send by Post method" onclick="sendDataByPostMethod()">
+    </form>
+
+    <script src="ajax.js"></script>
+</body>
+</html>

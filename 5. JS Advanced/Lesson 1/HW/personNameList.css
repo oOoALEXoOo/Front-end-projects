@@ -1,0 +1,82 @@
+ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #323232;
+}
+
+div.listWrapper {
+    display: inline-block;
+    width: 275px;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+input {
+    height: 35px;
+    outline: none;
+    font-size: 16px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+input.personName {
+    max-width: 68%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+input.personName.typingError {
+    color: red;
+    border: 1px solid red;
+    box-shadow: 0 0 3px 2px rgba(255, 0, 0, 0.7);
+}
+
+input.addToList {
+    max-width: 30%;
+    border: none;
+    background: #18bd5b;
+    color: white;
+    cursor: pointer;
+}
+
+input.personName:focus {
+    border: 1px solid #0da7c2;
+    box-shadow: 0 0 3px 2px rgba(0, 255, 234, 0.5), 0 0 2px 1px rgba(0,32,255,0.5);
+}
+
+input.addToList:hover {
+    background: #18a552;
+}
+
+ul.personNameList {
+    padding-left: 20px;
+    text-align: left;
+    margin-top: 20px;
+}
+
+ul.personNameList li {
+    font-size: 18px;
+    margin-bottom: 8px;
+    position: relative;
+}
+
+ul.personNameList li img.delFromList {
+    cursor: pointer;
+    width: 14px;
+    margin-left: 10px;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <div id="content-holder">
+        <div id="content">Custom element</div>
+    </div>
+
+    <button onclick="selectElementById()">
+        selectElementById()
+    </button>
+
+    <button onclick="changeBackgroundColor()">
+        changeBackgroundColor()
+    </button>
+
+    <table id="custom-table">
+        <tr>
+            <td><label>First Name: <input type="radio" name="radio" value="first input"></label></td>
+
+            <td><label>Second Name: <input type="radio" name="radio" value="second input"></label></td>
+
+            <td><label>Third Name: <input type="radio" name="radio" value="third input"></label></td>
+
+        </tr>
+    </table>
+
+    <button onclick="selectByTagName()">
+        selectByTagName()
+    </button>
+
+    <ul>
+        <li>this</li>
+        <li>test</li>
+    </ul>
+    <ul>
+        <li>is fully</li>
+        <li>passed</li>
+    </ul>
+
+    <button onclick="useQuerySelector()">
+        useQuerySelector()
+    </button>
+
+    <div id="divWithCustomAttributes" data-about="about logos academy"
+    data-current-student-name="Alex George">
+        Custom welcome text!
+    </div>
+
+    <button onclick="selectCustomAttributes()">
+        selectCustomAttributes()
+    </button>
+
+    <script src="querySelectors.js"></script>
+</body>
+</html>

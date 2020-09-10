@@ -1,0 +1,73 @@
+instagram
+
+users(
+	id,
+	username,
+	created_at
+)
+
+photos(
+	id,
+	image_url,
+	user_id (FK),
+	created_at
+)
+
+comments(
+	id,
+	comment_text,
+	photo_id,
+	user_id,
+	created_at
+)
+
+likes(
+	user_id,
+	photo_id,
+	created_at
+)
+
+follows(
+	follower_id,
+	followee_id,
+	created_at
+)
+
+tags(
+	id,
+	tag_name,
+	created_at
+)
+
+photo_tags(
+	photo_id,
+	tag_id
+)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

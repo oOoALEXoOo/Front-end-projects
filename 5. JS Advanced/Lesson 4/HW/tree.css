@@ -1,0 +1,75 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+ul.fileSystem {
+  padding-left: 22px;
+}
+
+ul.fileSystem .header {
+  font-size: 18px;
+}
+
+ul .sideline {
+  border-left: 1px solid #3e3e3e;
+  margin-left: 22px;
+}
+
+ul .endLine {
+  height: 6px;
+  width: 16px;
+  border-bottom: 1px solid #3e3e3e;
+}
+
+ul li {
+  list-style: none;
+  margin-top: 6px;
+}
+
+ul li.sublist {
+  position: relative;
+}
+
+ul li.sublist img.plusBtn {
+  position: absolute;
+  top: 0;
+  left: -22px;
+  cursor: pointer;
+}
+
+ul li span.text {
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+ul li span.text:focus {
+  outline: 1px dashed blue;
+}
+
+ul li span.popup {
+  position: relative;
+  padding: 8px 32px;
+  margin-left: 8px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  outline: none;
+}
+
+ul li span.popup::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  transform: translateY(-50%);
+  border-width: 6px;
+  border-style: solid;
+  border-color: transparent #555 transparent transparent;
+}

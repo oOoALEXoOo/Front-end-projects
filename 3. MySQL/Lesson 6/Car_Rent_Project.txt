@@ -1,0 +1,97 @@
+14 tables
+
+manufacturer(
+	name,
+	details
+)
+
+1 manufacturer > * model
+
+model (
+	name,
+	year,
+	manufacturer_id
+)
+
+color (
+	name
+)
+
+fuel_type (
+	name
+)
+
+drive_type (
+	name,
+	description
+)
+
+transmission_type (
+	name
+)
+
+vehicle (
+	reg_number,
+	current_km,
+	engine_size,
+	daily_hire_rate,
+	model_id,
+	color_id,
+	fuel_type_id,
+	drive_type_id,
+	transmission_type_id
+)
+
+country (
+	name
+)
+
+town (
+	name,
+	country_id
+)
+
+gender (
+	name
+)
+
+customer (
+	first_name,
+	last_name,
+	details,
+	email,
+	birthday,
+	phone_number,
+	town_id,
+	gender_id
+)
+
+booking_status (
+	name,
+	description
+)
+
+booking (
+	customer_id,
+	vehicle_id,
+	date_from,
+	date_to,
+	payment_received,
+	booking_status_id
+)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,64 @@
+instagram
+
+users(
+	id,
+	username,
+	password,
+	email,
+	created_at
+)
+
+messages (
+	user_sender_id,
+	user_receiver_id,
+	text,
+	created_at
+)
+
+alboms (
+	id,
+	user_id,
+	name,
+	qty_photos,
+	created_at
+)
+
+photos(
+	id,
+	image_url,
+	user_id (FK),
+	created_at
+)
+
+albom_photo(
+	albom_id,
+	user_id
+)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

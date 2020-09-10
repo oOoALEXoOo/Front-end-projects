@@ -1,0 +1,120 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+    color: white;
+    font-family: 'Arial', sans-serif
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    background: #007E8A;
+    padding-top: 10px
+}
+
+.menu .item {
+    min-height: 46px;
+    min-width: 52px;
+    margin-right: 12px;
+    position: relative;
+    text-align: center
+}
+
+.menu .item .icon {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    padding-bottom: 5px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%)
+}
+
+.menu .item .icon:hover {
+    background: #00DAE5;
+    color: black  
+}
+
+.menu .item .icon::before {
+    font-size: 30px;
+    position: absolute;
+    left: 50%;
+    top: -32px;
+    transition: all 1s
+}
+
+.menu .item .icon.star::before {
+    content: "☆";
+    margin-left: -12.5px;
+}
+
+.menu .item .icon.religion::before {
+    content: "☥";
+    margin-left: -7.645px
+}
+
+.menu .item .icon.weather::before {
+    content: "☀";
+    margin-left: -12.645px
+}
+
+.menu .item .icon.horoscope::before {
+    content: "♆";
+    margin-left: -12.365px
+}
+
+.menu .item .icon.HNY::before {
+    content: "❆";
+    margin-left: -13.325px
+}
+
+.menu .item .icon:hover::before {
+    transform: rotate(90deg) translate(-3px, -3px) rotate(270deg) translate(-3px, 3px);
+    color: #FFDD14;
+    text-shadow: 0 0 0.5em yellow, 0 0 0.1em orange, 0 0 0.5em orange, 0 0 0.2em yellow
+}

@@ -1,0 +1,30 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*
+ol {
+    color: red
+}
+
+p {
+    color: purple
+}
+*/
+
+h1 {
+    font-family: 'Caveat', cursive;
+    color: red
+}
+#extra {
+    color: fuchsia
+}
+.changed {
+    color: red
+}
+span {
+    color: green !important
+}
+span {
+    color: red
+}

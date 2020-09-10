@@ -1,0 +1,16 @@
+.carier {
+    font-size: 23px
+}
+.carierStart {
+    color: red;
+}
+.carierMiddle {
+    color: green;
+}
+.carierEnd {
+    color: blue;
+}
+.conclusion {
+    font-weight: bold;
+    font-style: italic
+}

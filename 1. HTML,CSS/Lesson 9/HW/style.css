@@ -1,0 +1,197 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+body {
+    background: #000;
+    color: #e6e6e6;
+    font-family: 'Tahoma', sans-serif
+}
+
+.page {
+    width: 100%;
+    min-height: 883px;
+    max-width: 960px;
+    background: url(images/page-bg.jpg) no-repeat;
+    background-size: 100%;
+    margin: 0 auto;
+    padding: 57px 70px 30px 70px;
+    box-sizing: border-box;
+    position: relative
+}
+
+.header {
+    width: 100%;
+    min-height: 147px;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.header .logo {
+    width: 32%;
+    text-align: center;
+    position: absolute;
+    bottom: 0
+}
+
+.header .logo img:first-child {
+    width: 50%;
+    position: absolute;
+    bottom: -15px;
+    right: 0;
+    opacity: 0.15
+}
+
+.header .logo img:nth-child(2) {
+    width: 100%
+}
+
+.header .logo h1 {
+    font-size: 10.16px;
+    margin-top: 9px
+}
+
+.header .contact {
+    position: absolute;
+    right: 17px;
+    bottom: 0
+}
+
+.header .contact h1 {
+    font-size: 10.16px;
+    margin-bottom: 8px
+}
+
+.header .contact ul {
+    font-size: 8.47px
+}
+
+.header .contact ul li:first-child {
+    margin-bottom: 4px
+}
+
+aside div, main div {
+    margin-bottom: 19%;
+    text-align: center
+}
+
+aside div img, main div img {
+    width: 100%
+}
+
+.sidebar {
+    width: 32%
+}
+
+.sidebar-left {
+    float: left
+}
+
+.sidebar-right {
+    float: right
+}
+
+.main {
+    width: 32%;
+    margin: 0 2%;
+    float: left    
+}
+
+.footer {
+    width: 100%;
+    min-height: 10px;
+    text-align: center;
+    clear: both;
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    transform: translate(-50%)
+}
+
+.footer p {
+    font-size: 10.16px
+}
+
+@media screen and (max-width: 768px) {
+    .sidebar-right {
+        float: none;
+        clear: both;
+        display: inline;
+        width: 100%
+    }
+    .sidebar-right div {
+        display: inline-block;
+        width: 49%
+    }
+    .sidebar-left, .main, .header .logo {
+        width: 49%;
+    }
+    .main {
+        margin: 0 0 0 1%
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .sidebar-left, .main {
+        float: none;
+        width: 100%;
+    }
+    .sidebar-right {
+        display: block;
+        width: 100%;
+    }
+    .sidebar-right div {
+        display: block;
+        width: 100%
+    }
+    .header .logo {
+        width: 80%;
+        left: 50%;
+        bottom: 38%;
+        transform: translate(-50%)
+    }
+    .main {
+        margin: 0
+    }
+}

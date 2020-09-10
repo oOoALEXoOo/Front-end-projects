@@ -1,0 +1,203 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+body {
+    background: #000;
+    color: #e6e6e6;
+    font-family: 'Tahoma', sans-serif
+}
+
+.container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: url(images/page-bg.jpg) no-repeat;
+    background-size: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 5%
+}
+
+.header {
+    margin-bottom: 15px
+}
+
+.header .logo {
+    text-align: center;
+}
+
+.header .logo .palm_treeImg img {
+    opacity: 0.15
+}
+
+.header .logo .logoImg img {
+    width: 100%;
+    max-width: 263px
+}
+
+.header .logo h1 {
+    font-size: 10.16px;
+    margin-top: 9px;
+    margin-bottom: 15px
+}
+
+.header .contact {
+    text-align: center
+}
+
+.header .contact h1 {
+    font-size: 10.16px;
+    margin-bottom: 8px
+}
+
+.header .contact ul {
+    font-size: 8.47px
+}
+
+.header .contact ul li:first-child {
+    margin-bottom: 4px
+}
+
+.main {
+    text-align: center
+}
+
+.main > div {
+    margin-bottom: 10%
+}
+
+.main img {
+    width: 100%;
+    max-width: 260px
+}
+
+.footer {
+    text-align: center
+}
+
+.footer p {
+    font-size: 10.16px
+}
+
+@media screen and (min-width: 600px) {
+    .container {
+        padding: 132px 70px 30px 70px;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        max-width: 960px;
+        min-height: 883px;
+        margin: 0 auto
+    }
+    .header {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        margin-bottom: 0;
+        position: relative
+    }
+    .header .logo {
+        position: relative
+    }
+    .header .logo .palm_treeImg {
+        position: absolute;
+        bottom: 0;
+        right: 0
+    }
+    .header .contact {
+        text-align: start;
+        position: absolute;
+        bottom: 15px;
+        right: 17px
+    }
+    .main {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -ms-flex-pack: distribute;
+            justify-content: space-around
+    }
+    .main div {
+        -webkit-box-flex: 1;
+            -ms-flex-positive: 1;
+                flex-grow: 1;
+        -ms-flex-preferred-size: 49%;
+            flex-basis: 49%;
+        max-width: 260px
+    }
+    .main div:nth-child(odd) {
+        margin-right: 2%
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        position: relative
+    }
+    .main div {
+        -ms-flex-preferred-size: 32%;
+            flex-basis: 32%
+    }
+    .main div:nth-child(odd) {
+        margin-right: 0
+    }
+    .main div:nth-child(2), .main div:nth-child(5) {
+        margin: 0 2%
+    }
+    .footer {
+        position: absolute;
+        left: 50%;
+        bottom: 30px;
+        -webkit-transform: translate(-50%);
+            -ms-transform: translate(-50%);
+                transform: translate(-50%)
+    }
+}

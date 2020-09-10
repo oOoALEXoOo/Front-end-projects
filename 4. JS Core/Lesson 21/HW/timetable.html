@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Schedule of subjects</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <h2>Timetable for 1st year students of computer engineering</h2>
+
+    <div id="accordion">
+        <h3>Monday</h3>
+        <div>
+            <div>9.55 - 11.30: Physics common</div>
+            <div>12.00 - 13.45: Physics applied</div>
+        </div>
+
+        <h3>Tuesday</h3>
+        <div>
+            <div>9.55 - 11.30: English for professional purposes</div>
+            <div>12.00 - 13.45: Information and coding theory</div>
+            <div>13.55 - 15.15: Information and coding theory</div>
+        </div>
+
+        <h3>Wednesday</h3>
+        <div>
+            <div>8.00 - 9.35: Calculus</div>
+            <div>9.55 - 11.30: Physics common</div>
+            <div>12.00 - 13.45: Data structures</div>
+            <div>13.55 - 15.15: Data structures</div>
+        </div>
+
+        <h3>Thursday</h3>
+        <div>
+            <div>8.00 - 9.35: Calculus</div>
+            <div>9.55 - 11.30: Data structures</div>
+            <div>12.00 - 13.45: Physical culture</div>
+        </div>
+
+        <h3>Friday</h3>
+        <div>
+            <div>8.00 - 9.35: History and culture of Ukraine</div>
+            <div>9.55 - 11.30: Data structures</div>
+            <div>12.00 - 13.45: History of Ukraine</div>
+        </div>
+    </div>
+
+</body>
+<script>
+    $(function () {
+        $('#accordion').accordion();
+    });
+</script>
+</html>

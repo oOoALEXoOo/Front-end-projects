@@ -1,0 +1,40 @@
+.container {
+  padding: 10px;
+  width: 450px;
+  position: relative;
+  top: 100px;
+  background-color: whitesmoke;
+  border: 1px solid black;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 2px rgba(0,0,0,0.5);
+}
+
+#display {
+  font-size: 20px;
+}
+
+.input-group-append .btn {
+  width: 70px;
+  padding: 6px 0;
+}
+
+.row {
+  margin-top: 15px;
+  padding: 0 15px;
+}
+
+.row .btn {
+  min-width: 60px;
+  min-height: 60px;
+  margin-right: 22px;
+}
+
+.row .btn:last-child {
+  margin: 0;
+}
+
+.row.fifth .btn:last-child {
+  width: 152px;
+}

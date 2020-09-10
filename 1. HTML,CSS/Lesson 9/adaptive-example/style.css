@@ -1,0 +1,165 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    margin-bottom: 20px;
+    text-align: center
+}
+ HTML5 display-role reset for older browsers 
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+.page {
+    width: 1170px; /*великі ПК*/
+    margin: 0 auto;
+    color: #fff;
+    font-size: 1.5em;
+}
+
+.header {
+    background: #B65727;
+    min-height: 80px;
+}
+
+.sidebar {
+    background: #AF20B6;
+    min-height: 200px;
+    width: 275px;
+}
+
+.sidebar-left {
+    float: left;
+}
+
+.sidebar-right {
+    float: right;
+}
+
+.main {
+    background: #57B604;
+    min-height: 500px;
+    width: 550px;
+    margin: 0 35px 20px 35px;
+    float: left;
+}
+
+.footer {
+    background: #4EB7D7;
+    min-height: 80px;
+    clear: both;
+}
+
+@media screen and (max-width: 1280px) { /*середні екрани*/
+    .page {
+        width: 960px;
+    }
+    
+    .sidebar {
+        width: 200px;
+    }
+    
+    .main {
+        width: 500px;
+        height: 450px;
+        margin: 0 30px 20px 30px;
+    }
+}
+
+
+@media screen and (max-width: 1024px) { /*планшети альбом, нетбуки*/
+    .page {
+        width: 730px;
+    }
+    
+    .sidebar-right {
+        float: none;
+        display: block;
+        clear: both;
+        width: 100%;
+    }
+    
+    .sidebar-left {
+        width: 260px;
+    }
+    
+    .main {
+        float: right;
+        width: 450px;
+        height: 400px;
+        margin: 0 0 20px 0
+    }
+}
+ 
+@media screen and (max-width: 768px) {/*планшет портрет*/
+    .page {
+        width: 560px;
+    }
+    
+    .sidebar-left {
+        width: 165px;
+    }
+    
+    .main {
+        width: 375px;
+    }
+}
+
+@media screen and (max-width: 600px) { /*невеликі планшети*/
+    .page {
+        width: 400px;
+    }
+    .main, .sidebar {
+        float: none;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) { /*телефон альбом*/
+    .page {
+        width: 300px;
+    }
+}
+@media screen and (max-width: 320px) { /*телефон портрет*/
+    .page {
+        width: 270px;
+    }
+}
+

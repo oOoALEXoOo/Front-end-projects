@@ -1,0 +1,222 @@
+@media screen and (min-width: 960px) {
+    @font-face {
+        font-family: 'Georgia Italic';
+        src: url('fonts/Georgia-Italic/Georgia-Italic.eot');
+        src: url('fonts/Georgia-Italic/Georgia-Italic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Georgia-Italic/Georgia-Italic.woff') format('woff'),
+        url('fonts/Georgia-Italic/Georgia-Italic.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+    header.top-level {
+        min-height: 847px
+    }
+    
+    header.top-level h1 {
+        text-align: left;
+        margin-left: 0
+    }
+    
+    header.top-level .menu-hr {
+        top: 82px;
+        left: auto;
+        right: 0;
+    }
+    
+    header.top-level div.bg img {
+        display: none
+    }
+    
+    header.top-level div.bg div {
+        margin-left: 0
+    }
+    
+    header.top-level div.bg div h2 {
+        font-size: 56px;
+        margin-bottom: 0
+    }
+    
+    header.top-level div.bg div h3 {
+        font-size: 30px;
+        margin-bottom: 10px
+    }
+    
+    header.top-level div.bg div h3 .hidden-word {
+        display: inline
+    }
+    
+    header.top-level div.bg div p {
+        max-width: 505px;
+        min-height: 104px;
+        font-size: 18px;
+        overflow-y: visible
+    }
+    
+    header.top-level div.bg div p span {
+        display: inline;
+        margin-bottom: 0
+    }
+    
+    header.top-level div.bg img.iPhone {
+        top: -20px;
+        right: 71px
+    }
+    
+    header.top-level div.radio-hr {
+        margin-top: 71px;
+        margin-right: 167px
+    }
+    
+    header.bottom-level {
+        padding-left: 0;
+        padding-right: 0
+    }
+    
+    header.bottom-level article {
+        margin-left: 0;
+        margin-right: 0
+    }
+    
+    header.bottom-level article:first-child {
+        margin-left: 10px
+    }
+    
+    header.bottom-level article:nth-child(2) img {
+        display: none
+    }
+    header.bottom-level article:nth-child(2) img+img {
+        display: inline
+    }
+    
+    header.bottom-level article:nth-child(3) img {
+        display: none
+    }
+    header.bottom-level article:nth-child(3) img+img {
+        display: inline
+    }
+    
+    header.bottom-level article h1 {
+        font-size: 30px
+    }
+    
+    header.bottom-level article p {
+        max-width: 228px
+    }
+    
+    main {
+        padding-left: 0;
+        padding-right: 0
+    }
+    
+    main div.article-wrapped {
+        position: relative
+    }
+    
+    main article.main {
+        min-width: 427px;
+        position: relative
+    }
+    
+    main article.main::after {
+        content: "";
+        border-top: 20px solid #fff;
+        border-left: 20px solid transparent;
+        position: absolute;
+        bottom: -20px;
+        right: 40px;
+        width: 0;
+        height: 0;
+        display: block
+    }
+    
+    main article.main h1, main article.main h1 + h1 {
+        display: inline-block;
+        font-size: 30px
+    }
+    
+    main article.main p {
+        max-height: 160px;
+        width: 346px;
+        overflow-y: visible;
+        word-break: break-all
+    }
+    
+    main div.article-wrapped div.radio-main {
+        margin: 0;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%)
+    }
+    
+    main article.secondary {
+        margin-top: 20px;
+        margin-right: 22px;
+        max-width: 440px
+    }
+    
+    main article.secondary article div h2 {
+        max-width: 500px;
+        overflow-x: visible;
+        overflow-y: visible;
+    }
+    
+    main.news {
+        padding-left: 0;
+        padding-right: 0
+    }
+    
+    main.news article.news .news-1, main.news article.news .news-2 {
+        display: none
+    }
+    
+    main.news article.news .news-1-2, main.news article.news .news-2-2 {
+        display: block
+    }
+    
+    main.news article.news .news-2-2, main.news article.news .news-3 {
+        padding-top: 8px
+    }
+    
+    main.news article.news article h1 {
+        font-size: 30px
+    }
+    
+    main.news article.news .news-1-2 h1 {
+        font-size: 48px;
+        text-shadow: 0 1px 0 #fff;
+        margin-bottom: 23px
+    }
+    
+    main.news article.news .news-1-2 h1 .er { 
+        color: #b9b9b9
+    }
+    
+    main.news article.news .news-1-2 h2 {
+        font-family: 'Georgia Italic';
+        color: #c5c5c5;
+        margin-bottom: 15px
+    }
+    
+    main.news article.news article p {
+        margin: 0;
+        max-width: 285px;
+        max-height: 167px;
+        overflow-y: visible;
+        word-break: normal
+    }
+    
+    main.news article.news .news-3 p .hidden {
+        display: inline
+    }
+    
+    footer {
+        min-height: 114px;
+        padding: 0
+    }
+    
+    footer p {
+        padding-top: 0;
+        margin-top: -15px
+    }
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JQuery UI</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="jquery_ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <h2>Interactions</h2>
+
+    <div id="draggable">
+        <p>Drag me around</p>
+    </div>
+
+    <br><br><br><br><br>
+
+    <div id="droppable">
+        <p>Drop some here</p>
+    </div>
+
+    <br><br><br><br><br>
+
+    <div id="resizable">
+        <p>Resize me</p>
+    </div>
+
+    <ul id="sortable">
+        <li><span>Item #1</span></li>
+        <li><span>Item #2</span></li>
+        <li><span>Item #3</span></li>
+        <li><span>Item #4</span></li>
+        <li><span>Item #5</span></li>
+    </ul>
+
+    <h2>Widgets</h2>
+
+    <div id="accordion">
+        <h3>Selection #1</h3>
+        <div>
+            <p>Selection #1 description</p>
+        </div>
+        <h3>Selection #2</h3>
+        <div>
+            <p>Selection #2 description</p>
+        </div>
+        <h3>Selection #3</h3>
+        <div>
+            <p>Selection #3 description</p>
+        </div>
+    </div>
+
+    <div class="ui-widget" style="margin: 200px 0;">
+        <label for="autocomplete">Data:</label><input id="autocomplete" type="text">
+    </div>
+
+    <div class="ui-widget" style="margin: 200px 0;">
+        <label for="datepicker">Date:</label><input id="datepicker" type="text">
+    </div>
+
+    <ul id="menu">
+        <li><div>Books</div></li>
+        <li><div>Music</div>
+            <ul>
+                <li><div>Rock</div>
+                    <ul>
+                        <li><div>Classic</div></li>
+                        <li><div>Alternative</div></li>
+                    </ul>
+                </li>
+                <li><div>Jazz</div></li>
+                <li><div>Pop</div></li>
+            </ul>
+        </li>
+    </ul>
+
+    <div id="progressbar" style="margin-bottom: 300px"></div>
+
+</body>
+<script src="jquery_ui.js"></script>
+</html>

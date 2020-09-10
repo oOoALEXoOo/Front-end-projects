@@ -1,0 +1,20 @@
+#mainHeader {
+    font-family: 'Roboto', sans-serif;
+}
+
+#mainList {
+    color: #0F05FF;
+}
+
+.secondaryList {
+    color: #000;
+    list-style-type: disc;
+}
+
+#firstParagraph {
+    color: #808080
+}
+
+#refToList {
+    color: #FF0000;
+}

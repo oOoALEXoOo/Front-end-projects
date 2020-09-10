@@ -1,0 +1,70 @@
+@import "../../resetStyles/nullStyles.css";
+@import "variables";
+@import "mixins";
+
+@include link(silver, yellow, red, green);
+
+.header {
+  @include link(silver, yellow, red, green) {
+    background: #000;
+
+    &:visited {
+      color: red;
+    }
+  }
+}
+
+#grid {
+  float: left;
+  width: 100%;
+
+  > div {
+    @include grid(4, 5%);
+  }
+}
+
+@for $i from 24 to 29 {
+  .#{$someVal}-#{$i} {
+    display: block;
+    padding-bottom: $i*2 + px;
+  }
+}
+
+a {
+  @extend .some_class-24;
+}
+
+.block:not(.first) {
+  @include padd(20px 60px 30px 45px);
+
+  width: $blockWidth;
+  background: $bgColor;
+  border: $border;
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+.first {
+  width: $blockWidth;
+  background: $bgColor;
+  border: $border;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+#centralBlock {
+  padding: 30px;
+
+  ul {
+    @include font(normal, #333)
+  }
+
+  li {
+    float: left;
+    width: (100% / 3);
+  }
+
+  li a {
+    @include font(bold);
+  }
+}

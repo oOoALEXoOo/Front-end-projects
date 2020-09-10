@@ -1,0 +1,104 @@
+@import "../../resetStyles/nullStyles.css";
+a {
+  color: silver;
+}
+a:hover {
+  color: #414141;
+}
+a:active {
+  color: yellow;
+}
+
+.header a {
+  color: silver;
+  background: #000;
+}
+.header a:hover {
+  color: #414141;
+}
+.header a:active {
+  color: yellow;
+}
+.header a:visited {
+  color: red;
+}
+
+#grid {
+  float: left;
+  width: 100%;
+}
+#grid > div {
+  float: left;
+  background: #ce3d3d;
+  margin-bottom: 5%;
+  height: 150px;
+  width: 21.25%;
+  margin-right: 5%;
+}
+#grid > div:nth-child(4n) {
+  margin-right: 0;
+}
+
+.some_class-24, a {
+  display: block;
+  padding-bottom: 48px;
+}
+
+.some_class-25 {
+  display: block;
+  padding-bottom: 50px;
+}
+
+.some_class-26 {
+  display: block;
+  padding-bottom: 52px;
+}
+
+.some_class-27 {
+  display: block;
+  padding-bottom: 54px;
+}
+
+.some_class-28 {
+  display: block;
+  padding-bottom: 56px;
+}
+
+.block:not(.first) {
+  padding: 20px 60px 30px 45px;
+  width: 70%;
+  background: #ccc;
+  border: 2px solid black;
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+.first {
+  width: 70%;
+  background: #ccc;
+  border: 2px solid black;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+#centralBlock {
+  padding: 30px;
+}
+#centralBlock ul {
+  font-size: 1.1em;
+  font-weight: normal;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+#centralBlock li {
+  float: left;
+  width: 33.3333333333%;
+}
+#centralBlock li a {
+  font-size: 1.1em;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  color: red;
+}
+
+/*# sourceMappingURL=styles.css.map */

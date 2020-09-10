@@ -1,0 +1,45 @@
+@import "../resetStyles/nullStyles.css";
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-auto-rows: minmax(100px, auto);
+  grid-gap: 1em;
+  justify-items: stretch;
+  align-items: stretch;
+
+  > .box {
+    padding: 1em;
+    background-color: #f88800;
+
+    &.box1 {
+      //justify-self: end;
+      //align-self: start;
+      grid-column: 1/3;
+      grid-row: 1/3;
+    }
+
+    &.box2 {
+      //align-self: start;
+      grid-column: 3;
+      grid-row: 1/3;
+    }
+
+    &.box3 {
+      //justify-self: start;
+      //align-self: start;
+      grid-column: 2/4;
+      grid-row: 3;
+    }
+
+    &.box4 {
+      grid-column: 1;
+      grid-row: 2/4;
+    }
+
+    &.light {
+      background-color: #faa984;
+    }
+  }
+}
+

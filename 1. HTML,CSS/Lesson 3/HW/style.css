@@ -1,0 +1,32 @@
+body {
+    background: url(images/bg.jpg) fixed no-repeat;
+    background-size: cover;
+}
+h1 {
+    font-family: 'Arial', sans-serif;
+    text-align: center;    
+    letter-spacing: 12px;
+}
+h2 {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    font-size: 30px
+}
+#firstWord {
+    font-weight: bold;
+    font-size: 20px
+}
+#remarkYear {
+    text-decoration: line-through
+}
+#up-to-dateInfo {
+    text-decoration: underline
+}
+.refs-LvivOldTimes {
+    letter-spacing: 5px;
+    text-decoration: underline
+}
+.mainItem {
+    text-transform: uppercase;
+    font-size: 20px
+}
